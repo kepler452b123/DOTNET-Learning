@@ -1,0 +1,61 @@
+
+POST http://localhost:5206/users
+Content-Type: application/json
+
+{
+    "Name" : "Alex Adams",
+    "Status" : "Active",
+    "Email" : "aadams1@gmail.com",
+    "JoinDate" : "2024-01-08"
+}
+
+###
+POST http://localhost:5206/users
+Content-Type: application/json
+
+{
+    "Name" : "Kashif Bhuiyan",
+    "Status" : "Active",
+    "Email" : "kbhuiyan@gmail.com",
+    "JoinDate" : "2024-01-06"
+}
+
+###
+PUT http://localhost:5206/users/3
+Content-Type: application/json
+
+{
+    "Name" : "Alex Adams",
+    "Status" : "Active",
+    "Email" : "alexadams@gmail.com",
+    "JoinDate" : "2024-01-08"
+}
+
+###
+GET http://localhost:5206/users/1
+
+###
+GET http://localhost:5206/users/5
+
+###
+GET http://localhost:5206/users
+
+###
+DELETE http://localhost:5206/users/3
+
+###
+DELETE http://localhost:5206/users/1
+
+###
+DELETE http://localhost:5206/users/4
+
+###
+PUT http://localhost:5206/users/6
+Content-Type: application/json
+
+{
+    "Name" : "Tekken 7: Ultimate",
+    "Genre" : "Fighting",
+    "Price" : 119.99,
+    "releaseDate" : "2024-01-08"
+}
